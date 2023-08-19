@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            display: flex;
+            background-color: black;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        ul {
+            display: flex;
+            /* background: white; */
+
+        }
+
+        #hrrr li {
+            margin: 0px 10px;
+            padding: 0px 10px;
+            list-style: none;
+        }
+
+        .hamburger {
+            display: none;
+            /* background-color: green; */
+        }
+
+        .line {
+            background-color: white;
+            margin: 2px 2px;
+            border-radius: 12px;
+            cursor: pointer;
+            
+        }
+
+        .hambody {
+            display: none;
+            cursor: pointer;
+
+        }
+
+        .hhh {
+        
+            width: 100%;
+            background-color: black;
+            
+        }
+
+        
+
+       
+
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .container {
+            margin: 5px 5px;
+            padding: 12px 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .line {
+            cursor: pointer;
+        }
+
+        #hi {
+            color: orange;
+            /* font-size: xx-large; */
+        }
+
+        .typer {
+            color: orange;
+            font-size: larger;
+        }
+
+        .photo1 {
+            height: fit-content;
+            /* background-color: white; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px 2px;
+            animation: aquacon 2s linear 2s infinite;
+
+        }
+
+        .ram {
+            overflow: hidden;
+            position: relative;
+            height: 400px;
+            width: 400px;
+            background-color: #ed7002;
+            left: auto;
+            right: auto;
+            padding: 0px 0px;
+            margin: 0px 12px;
+            display: flex;
+            box-shadow: 2px 2px 30px #ed7002;
+            border: 2px white;
+            justify-content: center;
+            border-bottom-right-radius: 120px;
+            border-top-left-radius: 120px;
+            border-top-right-radius: 120px;
+            border-bottom-left-radius: 120px;
+            /* background-image: url(./earth-1756274_1920.jpg); */
+        }
+
+        #skill {
+            /* background-color: green; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            /* padding: 0px 20px; */
+        }
+
+        @keyframes aquacon {
+            0% {
+                position: relative;
+                top: 10px;
+            }
+
+            50% {
+                top: 20px;
+                /* transition: all 2s; */
+            }
+
+            100% {
+                position: relative;
+                top: 10px;
+            }
+        }
+
+        #about {
+            display: flex;
+            margin: 5px 5px;
+            padding: 2px 5px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+
+        #Myproject {
+            /* background-color: green; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .project {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .award {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .hhh{
+            background-image:url("./BtMt.gif");
+            background-repeat: no-repeat;
+        }
+
+        @media screen and (min-width:280px) and (max-width:850px) {
+            .hamburger {
+                display: flex;
+                flex-direction: column;
+                margin: 0px 10px;
+
+            }
+
+            #hrrr {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="w-[100%]">
+        <div class="logo">
+            <img src="logo.png" alt="" height="80vh" width="80vw">
+        </div>
+
+        <div class="hamburger cursor-pointer ">
+            <div class="line h-1 w-6"></div>
+            <div class="line h-1 w-6"></div>
+            <div class="line h-1 w-6"></div>
+        </div>
+        <ul id="hrrr">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#Myproject">My Projects</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="hambody ">
+        <div class="hhh rounded-3xl bg-slate-200 py-3 h-50 flex justify-center align-middle ">
+            <ul id="hammer" class="my-3 flex justify-center align-middle flex-col space-y-2">
+                <li class="flex justify-center align-middle"><a href="#Home" class="text-black font-bold bg-orange-300 rounded-xl p-2">Home</a></li>
+                <li class="flex justify-center align-middle"><a href="#about" class="text-black font-bold bg-orange-300 rounded-xl p-2">About</a></li>
+                <li class="flex justify-center align-middle"><a href="#Myproject" class="text-black font-bold bg-orange-300 rounded-xl p-2">My Projects</a></li>
+                <li class="flex justify-center align-middle"><a href="" class="text-black font-bold bg-orange-300 rounded-xl p-2">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    
+    <div class="all">
+        <section id="Home">
+            <img id="ram" class="rounded-3xl" src="ram.jpg" alt="" height="fit-content" width="100%">
+            <div class="container">
+                <section id="hi">
+                    <h1 class="text-4xl">Hi</h1>
+                </section>
+                <section id="types">
+
+                    <h2 class="text-xl">I'm <span class="typer text-2xl"></span></h2>
+                </section>
+                <section>
+                    <br>
+                    <div class="para">
+                        <p id="info">
+                            <span id="i">I</span> am always interested in designing and have been looking forward to
+                            work as
+                            a
+                            Web
+                            Developer. Currently learning JavaScript Backend Frameworks and Working with Some Project
+                            which
+                            includes
+                            CSS animations
+                        </p>
+                    </div>
+                </section>
+            </div>
+
+            <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+            <script>
+                var type = new Typed(".typer", {
+
+                    strings: ["Ramrac", "Web Developer", "Free Lancer", "Singer"],
+                    typespeed: 0,
+                    backspeed: 0,
+                    loop: true
+                })
+
+            </script>
+
+        </section>
+        <br>
+        <section id="about" class="w-[100%]">
+            <div class="heading">
+                <h1 class="text-orange-400 text-3xl">About Me</h1>
+            </div><br>
+            <div class="content">
+                <h2 class="text-orange-300 text-xl">Summary</h2><br>
+                <p class="mx-3">A highly organized and proactive professional with exceptional communication and
+                    interpersonal
+                    skills.Proven ability to work as part of a team and manage multiple tasks simultaneously. Utilizing
+                    myknowledge and training to successfully handle complex tasks and achieve desired results. Seeking
+                    an opportunity to effectively contribute to the success of the organization</p>
+            </div>
+            <br>
+            <section id="skill">
+                <h1 class="text-orange-300 text-xl">Skills</h1>
+                <p class="mx-3">C , JAVA, PYTHON, HTML, CSS, JavaScript, BOOTSTRAP, TAILWIND , NODE , REACT </p>
+            </section>
+            <br>
+            <br>
+            <section>
+                <div class="award">
+                    <h2 class="text-orange-300 text-xl">Awards and Achievements</h2>
+                    <br>
+                    <p class="flex justify-center align-middle mx-3">
+                        Basics in Java Script Mar 2023
+                        <br>
+                        Demonstrated Expertise: Successfully obtained a Certificate in JavaScript Basics from
+                        OpenWeaver,
+                        showcasing knowledge of the fundamentals of the programming language.
+                        <br>
+                        <br>
+                        HTML -Introduction Feb 2023
+                        <br>
+                        Received certification in HTML Introduction by Career Ninja, increasing HTML proficiency and
+                        boosting understanding of web development concepts by 20%. Developed skills in creating and
+                        maintaining websites, and successfully implemented HTML coding into 3 projects.
+                        <br>
+                        <br>
+                        AI for Everyone Jan 2022
+                        <br>
+                        Led successful implementation of AI technology, achieving prime certificate in AI for Everyone
+                        byDigital
+                        Defined. Effectively utilized skills in AI to enhance existing processes, resulting in improved
+                        productivity
+                        and efficiency.
+                        <br>
+                        <br>
+                        Basics in Python Jul 2020
+                        <br>
+                        Completed a certification course in Python from the University of Michigan through Coursera,
+                        demonstrating proficiency in the fundamentals of Python programming
+                    </p>
+                </div>
+            </section>
+            <br><br>
+            <div class="photo1 w-[100%]">
+                <div class="ram">
+                    <img src="./rambg.png" alt="ramrac" id="rambg">
+                </div>
+            </div>
+            <br>
+            <br>
+        </section>
+        <section id="Myproject" class="w-[100%]">
+            <div class="project">
+                <h2 class="text-orange-300 text-xl">My Projects</h2>
+                <br>
+                <p class="flex justify-center align-middle mx-3">
+                    => My personal portfolio Feb 2023 - Mar 2023
+                    <br>
+                    • Developed highly functional portfolio website to showcase programming skills
+                    <br>
+                    • Built website with HTML, CSS and JavaScript to enhance visual appeal
+                    <br>
+                    • Optimized website for mobile devices to enhance accessibility
+                    <br>
+                    • Utilized Git for version control to ensure timely updates
+                    <br>
+                    • Ensured website functionality across multiple browsers
+                    <br>
+                    • Tested for bugs and deployed website on several platforms
+                    <br>
+                    <br>
+                    => Image Slider Mar 2023 - Mar 2023
+                    <br>
+                    Image sliding animation using CSS
+                    <br>
+                    <br>
+                    => Sharingan animation Mar 2023 - Mar 2023
+                    <br>
+                    My project centered around creating interactive CSS animations to enhance user experience
+                    whenthey land on a web page. I researched existing CSS animations, studied how they were used on
+                    professional websites
+                    and learned how to create my own.
+                </p>
+            </div>
+        </section>
+        <br>
+        <br>
+        <div class="resume flex justify-center align-middle">
+            <button class="bg-orange-400 rounded-lg h-full w-fit p-1 animate-bounce">
+                <a id="downloadcv" href="./ramrac resume 19-05-2023 (3).pdf" class="flex flex-row justify-center align-middle px-2 ">Download CV<span><img src="./down.png" alt="" class="h-5 w-5 mx-2 my-1 animate-bounce"></span></a>
+            </button>
+
+        </div>
+
+    </div>
+    <br>
+    <br>
+    <footer class="bg-gray-400 text-white w-[100%] flex justify-between">
+        <p id="copyright " class="mx-3">Copy &copy; 2023 Ramrac</p>
+        <ul id="footerlist" class="space-x-2 mx-2 px-2">
+            <li><a href="https://www.facebook.com/ramrac143/"><img src="./facebook.png" alt="" width="35px"></a></li>
+            <li><a href="https://www.instagram.com/livelike_royal/"><img src="./instagram.png" alt="" width="35px"></a>
+            </li>
+            <li><a href="https://www.linkedin.com/in/arabandi-rambabu-b3aabb1b5"><img src="./linkedin.png" alt=""
+                        width="35px"></a></li>
+            <li><a href="https://github.com/rambabu-143"><img src="./github.png" alt="" width="35px"></a></li>
+        </ul>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+        $(".hamburger").click(function () {
+            $(".hambody").slideToggle();
+        })
+
+    </script>
+</body>
+
+</html>
